@@ -188,23 +188,24 @@
         /* Image Slider */
         .slider-container {
             position: relative;
-            max-width: 900px;
+            max-width: 1100px;
             margin: 60px auto 0;
             overflow: hidden;
-            border-radius: 30px;
-            box-shadow: 0 20px 60px rgba(0, 0, 0, 0.3);
+            padding: 0 60px;
         }
 
         .slider-wrapper {
             display: flex;
+            gap: 20px;
             transition: transform 0.5s cubic-bezier(0.4, 0, 0.2, 1);
         }
 
         .slider-slide {
-            min-width: 100%;
-            display: flex;
-            justify-content: center;
-            align-items: center;
+            min-width: calc(33.333% - 14px);
+            flex-shrink: 0;
+            border-radius: 20px;
+            overflow: hidden;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
             background: #000;
         }
 
@@ -212,31 +213,30 @@
             width: 100%;
             height: auto;
             display: block;
-            object-fit: contain;
+            object-fit: cover;
+            max-height: 450px;
         }
 
         .slider-nav {
-            position: absolute;
-            bottom: 30px;
-            left: 50%;
-            transform: translateX(-50%);
             display: flex;
+            justify-content: center;
             gap: 12px;
-            z-index: 10;
+            margin-top: 40px;
         }
 
         .slider-dot {
             width: 12px;
             height: 12px;
             border-radius: 50%;
-            background: rgba(255, 255, 255, 0.4);
-            border: 2px solid rgba(255, 255, 255, 0.8);
+            background: rgba(99, 102, 241, 0.3);
+            border: 2px solid rgba(99, 102, 241, 0.5);
             cursor: pointer;
             transition: all 0.3s;
         }
 
         .slider-dot.active {
-            background: rgba(255, 255, 255, 0.9);
+            background: var(--primary);
+            border-color: var(--primary);
             transform: scale(1.3);
         }
 
@@ -244,8 +244,8 @@
             position: absolute;
             top: 50%;
             transform: translateY(-50%);
-            background: rgba(255, 255, 255, 0.9);
-            border: none;
+            background: white;
+            border: 2px solid var(--primary);
             width: 50px;
             height: 50px;
             border-radius: 50%;
@@ -255,26 +255,31 @@
             justify-content: center;
             transition: all 0.3s;
             z-index: 10;
-            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 4px 12px rgba(99, 102, 241, 0.2);
         }
 
         .slider-arrow:hover {
-            background: white;
+            background: var(--primary);
             transform: translateY(-50%) scale(1.1);
         }
 
+        .slider-arrow:hover svg {
+            fill: white;
+        }
+
         .slider-arrow.prev {
-            left: 20px;
+            left: 0;
         }
 
         .slider-arrow.next {
-            right: 20px;
+            right: 0;
         }
 
         .slider-arrow svg {
             width: 24px;
             height: 24px;
             fill: var(--primary);
+            transition: fill 0.3s;
         }
 
         /* Stats Section */
@@ -392,7 +397,16 @@
 
             .slider-container {
                 margin: 40px auto 0;
-                border-radius: 20px;
+                padding: 0 50px;
+            }
+
+            .slider-slide {
+                min-width: 100%;
+                max-height: 400px;
+            }
+
+            .slider-slide img {
+                max-height: 400px;
             }
 
             .slider-arrow {
@@ -401,20 +415,20 @@
             }
 
             .slider-arrow.prev {
-                left: 10px;
+                left: 5px;
             }
 
             .slider-arrow.next {
-                right: 10px;
+                right: 5px;
             }
 
             .slider-arrow svg {
-                width: 20px;
-                height: 20px;
+                width: 18px;
+                height: 18px;
             }
 
             .slider-nav {
-                bottom: 20px;
+                margin-top: 30px;
             }
 
             .slider-dot {
@@ -499,9 +513,9 @@
                         <path d="M8.59,16.58L13.17,12L8.59,7.41L10,6L16,12L10,18L8.59,16.58Z" />
                     </svg>
                 </button>
-
-                <div class="slider-nav" id="sliderNav"></div>
             </div>
+
+            <div class="slider-nav" id="sliderNav"></div>
         </div>
     </section>
 
@@ -601,37 +615,70 @@
         const sliderWrapper = document.getElementById('sliderWrapper');
         const sliderNav = document.getElementById('sliderNav');
 
-        // Create navigation dots
-        for (let i = 0; i < totalSlides; i++) {
-            const dot = document.createElement('div');
-            dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
-            dot.onclick = () => goToSlide(i);
-            sliderNav.appendChild(dot);
+        function getSlidesPerView() {
+            return window.innerWidth <= 768 ? 1 : 3;
         }
 
-        function updateSlider() {
-            sliderWrapper.style.transform = `translateX(-${currentSlide * 100}%)`;
+        function initDots() {
+            sliderNav.innerHTML = '';
+            const slidesPerView = getSlidesPerView();
+            const totalPages = Math.ceil(totalSlides / slidesPerView);
 
-            // Update active dot
+            for (let i = 0; i < totalPages; i++) {
+                const dot = document.createElement('div');
+                dot.className = 'slider-dot' + (i === 0 ? ' active' : '');
+                dot.onclick = () => goToSlide(i);
+                sliderNav.appendChild(dot);
+            }
+        }
+
+        initDots();
+
+        function updateSlider() {
+            const slidesPerView = getSlidesPerView();
+            const slideWidth = 100 / slidesPerView;
+            const gapPercentage = (20 / sliderWrapper.offsetWidth) * 100;
+            const movePercentage = currentSlide * (slideWidth + gapPercentage);
+
+            sliderWrapper.style.transform = `translateX(-${movePercentage}%)`;
+
+            const currentPage = Math.floor(currentSlide / slidesPerView);
             document.querySelectorAll('.slider-dot').forEach((dot, index) => {
-                dot.classList.toggle('active', index === currentSlide);
+                dot.classList.toggle('active', index === currentPage);
             });
         }
 
         function moveSlide(direction) {
-            currentSlide = (currentSlide + direction + totalSlides) % totalSlides;
+            const slidesPerView = getSlidesPerView();
+            const maxSlide = totalSlides - slidesPerView;
+            currentSlide = Math.max(0, Math.min(currentSlide + direction, maxSlide));
             updateSlider();
         }
 
-        function goToSlide(index) {
-            currentSlide = index;
+        function goToSlide(pageIndex) {
+            const slidesPerView = getSlidesPerView();
+            currentSlide = pageIndex * slidesPerView;
             updateSlider();
         }
+
+        // Handle window resize
+        window.addEventListener('resize', () => {
+            currentSlide = 0;
+            initDots();
+            updateSlider();
+        });
 
         // Auto-play slider
         let autoplayInterval = setInterval(() => {
-            moveSlide(1);
-        }, 5000);
+            const slidesPerView = getSlidesPerView();
+            const maxSlide = totalSlides - slidesPerView;
+            if (currentSlide >= maxSlide) {
+                currentSlide = 0;
+            } else {
+                currentSlide++;
+            }
+            updateSlider();
+        }, 4000);
 
         // Pause autoplay on hover
         const sliderContainer = document.querySelector('.slider-container');
@@ -641,8 +688,15 @@
 
         sliderContainer.addEventListener('mouseleave', () => {
             autoplayInterval = setInterval(() => {
-                moveSlide(1);
-            }, 5000);
+                const slidesPerView = getSlidesPerView();
+                const maxSlide = totalSlides - slidesPerView;
+                if (currentSlide >= maxSlide) {
+                    currentSlide = 0;
+                } else {
+                    currentSlide++;
+                }
+                updateSlider();
+            }, 4000);
         });
 
         // Keyboard navigation
