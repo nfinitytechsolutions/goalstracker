@@ -1,3 +1,4 @@
 https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/
 https://scroll.in/article/1090987/the-art-of-loitering-around-your-city-and-how-it-can-build-community-connection
 https://www.entrepreneur.com/leadership/why-consultants-skills-are-practically-useless-thanks-to-ai/502027
+https://scitechdaily.com/scientists-create-powerful-new-form-of-aluminum-that-could-replace-rare-earth-metals/
