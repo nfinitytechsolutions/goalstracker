@@ -1,7 +1,2 @@
-https://m.economictimes.com/news/new-updates/quote-of-the-day-by-socrates-strong-minds-discuss-ideas-average-minds-discuss-/amp_articleshow/128847901.cms
-https://medium.com/@its.shoryabisht/why-python-is-the-hero-of-modern-programming-cdd772485256
-https://www.moneycontrol.com/news/trends/zoho-ceo-sridhar-vembu-lists-jobs-that-are-not-in-danger-of-being-replaced-by-ai-13845977.html
-https://medium.com/@its.shoryabisht/why-python-is-the-hero-of-modern-programming-cdd772485256
-https://m.economictimes.com/news/new-updates/quote-of-the-day-by-socrates-strong-minds-discuss-ideas-average-minds-discuss-/amp_articleshow/128847901.cms
 https://developer.nvidia.com/blog/develop-native-multimodal-agents-with-qwen3-5-vlm-using-nvidia-gpu-accelerated-endpoints/
 https://scroll.in/article/1090987/the-art-of-loitering-around-your-city-and-how-it-can-build-community-connection
