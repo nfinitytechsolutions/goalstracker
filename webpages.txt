@@ -16,3 +16,4 @@ https://m.economictimes.com/news/international/us/the-animal-that-edits-its-own-
 https://www.sciencedaily.com/releases/2026/03/260303050622.htm
 https://timesofindia.indiatimes.com/technology/tech-news/openai-loses-1-5-million-subscribers-in-less-than-48-hours-after-ceo-sam-altman-says-yes-to-the-deal-that-anthropic-rejected/articleshow/128980016.cms
 https://m.economictimes.com/news/international/us/quote-of-the-day-march-3-quote-of-the-day-by-confucius-to-practice-five-things-under-all-circumstances-constitutes-perfect-virtue-these-five-are-lessons-on-moral-values-and-self-development-by-the-chinese-philosopher-and-founder-of-confucianism/articleshow/128976175.cms
+https://devblogs.microsoft.com/semantic-kernel/give-your-agents-domain-expertise-with-agent-skills-in-microsoft-agent-framework/
