@@ -13,3 +13,4 @@ https://www.wionews.com/photos/if-claude-ai-can-help-kill-a-country-s-leader-do-
 https://towardsdatascience.com/agentic-rag-vs-classic-rag-from-a-pipeline-to-a-control-loop/
 https://lmstudio.ai/models/qwen/qwen3.5-9b
 https://scitechdaily.com/scientists-may-have-found-the-holy-grail-of-quantum-computing/
+https://www.livescience.com/technology/computing/meet-the-worlds-smallest-ai-supercomputer-it-packs-doctorate-level-intelligence-its-makers-say-and-can-fit-into-your-pocket
