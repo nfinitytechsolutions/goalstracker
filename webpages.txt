@@ -1,17 +1,3 @@
-https://interestingengineering.com/ai-robotics/china-xiaomi-humanoid-robot-ev-factory
-https://www.freecodecamp.org/news/build-a-local-ai/
-https://m.economictimes.com/news/international/us/the-animal-that-edits-its-own-genes-after-theyre-written/articleshow/128943044.cms
-https://www.sciencedaily.com/releases/2026/03/260303050622.htm
-https://timesofindia.indiatimes.com/technology/tech-news/openai-loses-1-5-million-subscribers-in-less-than-48-hours-after-ceo-sam-altman-says-yes-to-the-deal-that-anthropic-rejected/articleshow/128980016.cms
-https://m.economictimes.com/news/international/us/quote-of-the-day-march-3-quote-of-the-day-by-confucius-to-practice-five-things-under-all-circumstances-constitutes-perfect-virtue-these-five-are-lessons-on-moral-values-and-self-development-by-the-chinese-philosopher-and-founder-of-confucianism/articleshow/128976175.cms
-https://devblogs.microsoft.com/semantic-kernel/give-your-agents-domain-expertise-with-agent-skills-in-microsoft-agent-framework/
-https://analyticsindiamag.com/ai-news/claude-opus-46-surprises-turing-award-winner-solves-problem-hed-been-working-on-for-weeks
-https://timesofindia.indiatimes.com/technology/tech-news/openai-loses-1-5-million-subscribers-in-less-than-48-hours-after-ceo-sam-altman-says-yes-to-the-deal-that-anthropic-rejected/articleshow/128980016.cms?utm_source=whatsapp&utm_medium=amp_social&utm_campaign=social_share
-https://www.ndtv.com/food/bengaluru-techie-uses-ai-to-catch-cook-at-rs-4-800-salary-stealing-fruits-11162553?_gl=1*1tjbm9m*_ga*QTB0RzAzSXYydFl2WnFnNF9sWFp1TWgyQTlQUENUWEpoZ0hFWXBCamo0RGp0bEN1MTh1NFFGM0d5TEtlZmxQRw..*_ga_XQCGTLW8NV*MTc3MjYzMTc3Mi4yOTQuMS4xNzcyNjMxNzcyLjAuMC4w
-https://tech4gamers.com/windows-12-reportedly-relasing-2026-modular-ai-focused-os/
-https://www.wionews.com/photos/if-claude-ai-can-help-kill-a-country-s-leader-do-you-really-think-your-normal-job-is-safe-1772535073473/1772535073474
-https://towardsdatascience.com/agentic-rag-vs-classic-rag-from-a-pipeline-to-a-control-loop/
-https://lmstudio.ai/models/qwen/qwen3.5-9b
 https://scitechdaily.com/scientists-may-have-found-the-holy-grail-of-quantum-computing/
 https://www.livescience.com/technology/computing/meet-the-worlds-smallest-ai-supercomputer-it-packs-doctorate-level-intelligence-its-makers-say-and-can-fit-into-your-pocket
 https://www.earth.com/news/relentless-rain-helped-bring-down-a-thriving-civilization-4000-years-ago/
