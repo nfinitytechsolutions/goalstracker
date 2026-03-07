@@ -22,3 +22,4 @@ https://venturebeat.com/orchestration/google-pm-open-sources-always-on-memory-ag
 https://analyticsindiamag.com/ai-features/bpo-in-the-age-of-the-talking-ai-agents
 https://cdn.sanity.io/files/4zrzovbb/website/dc7bcd0224644fce97cecb7f9e68dcd8434b35f1.pdf
 https://www.scientificamerican.com/article/ibm-scientists-unveil-the-first-ever-half-moebius-molecule-with-the-help-of/
+https://venturebeat.com/technology/anthropic-launches-claude-marketplace-giving-enterprises-access-to-claude
