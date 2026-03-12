@@ -36,3 +36,4 @@ https://openai.com/index/designing-agents-to-resist-prompt-injection/
 https://www.livescience.com/health/rectal-garlic-insertion-for-immune-support-medical-chatbots-confidently-give-disastrously-misguided-advice-experts-say
 https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/
 https://towardsdatascience.com/what-is-agent-skills-beyond-claude/
+https://www.theguardian.com/technology/2026/mar/11/chatbots-help-users-plot-deadly-attacks-researchers-find
