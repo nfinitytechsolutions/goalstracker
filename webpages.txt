@@ -35,3 +35,4 @@ https://www.entrepreneur.com/leadership/lasting-success-starts-with-this-winning
 https://openai.com/index/designing-agents-to-resist-prompt-injection/
 https://www.livescience.com/health/rectal-garlic-insertion-for-immune-support-medical-chatbots-confidently-give-disastrously-misguided-advice-experts-say
 https://github.blog/ai-and-ml/github-copilot/the-era-of-ai-as-text-is-over-execution-is-the-new-interface/
+https://towardsdatascience.com/what-is-agent-skills-beyond-claude/
