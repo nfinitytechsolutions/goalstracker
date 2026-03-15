@@ -47,3 +47,4 @@ https://towardsdatascience.com/how-to-build-agentic-rag-with-hybrid-search/
 https://www.theguardian.com/science/2026/mar/14/please-drive-carefully-scientists-plan-to-transport-volatile-antimatter-for-first-time
 https://www.theguardian.com/science/2026/mar/14/please-drive-carefully-scientists-plan-to-transport-volatile-antimatter-for-first-time
 https://www.futura-sciences.com/en/a-groundbreaking-therapy-could-eliminate-92-of-cancer-cells-while-sparing-healthy-tissue_27656/
+https://www.newscientist.com/article/2519284-single-celled-organism-with-no-brain-is-capable-of-pavlovian-learning/
