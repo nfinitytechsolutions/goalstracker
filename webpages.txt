@@ -55,3 +55,4 @@ https://www.indiatoday.in/technology/news/story/ai-powered-school-promises-kids-
 https://time.com/article/2026/03/09/ai-robots-soldiers-war/
 https://www.techspot.com/news/111690-pokmon-go-ar-data-has-turned-centimeter-accurate.html
 https://www.forbes.com/sites/aytekintank/2026/03/17/5-chatgpt-prompts-to-think-like-a-ceo/
+https://blog.langchain.com/open-swe-an-open-source-framework-for-internal-coding-agents/
